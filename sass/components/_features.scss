@@ -1,0 +1,43 @@
+.features {
+  background: $text-white;
+  padding-top: 94px;
+}
+.features {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+}
+.features__item {
+  flex-basis: 270px;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.features-rectangle {
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $bg-cl-icon;
+  border-radius: 4px;
+}
+.team__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $main-text-cl;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.features__desc {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $pargf-cl;
+}

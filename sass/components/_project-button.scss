@@ -1,0 +1,39 @@
+.our-services {
+  background-color: $text-white;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.project-button {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.our-services__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  color: $main-text-cl;
+  background: $bg-cl-icon;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  border-style: none;
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px;
+  .our-services &:hover,
+  .our-services &:focus {
+    background-color: $btn-cl;
+    color: $text-white;
+  }
+}
