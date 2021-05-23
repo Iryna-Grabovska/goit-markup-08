@@ -13,6 +13,7 @@
     margin-right: 8px;
   }
   &__list {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
   }

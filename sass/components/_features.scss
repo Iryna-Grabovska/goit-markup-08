@@ -1,19 +1,25 @@
 .features {
+  flex-basis: 100%;
+  justify-content: center;
+  display: flex;
   background: $text-white;
   padding-top: 94px;
-}
-.features {
-  display: flex;
-  justify-content: center;
-
   &__list {
-    display: flex;
-  }
-}
-.features__item {
-  flex-basis: 270px;
-  &:not(:last-child) {
-    margin-right: 20px;
+    @media screen and (min-width: 760px) {
+      flex-basis: calc((100% - 30px * 2) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 30px * 4) / 4);
+      display: flex;
+    }
+
+    &__item {
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
   }
 }
 
@@ -35,6 +41,11 @@
   color: $main-text-cl;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+.feature__title {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 .features__desc {
   line-height: 1.71;
