@@ -12,6 +12,9 @@
   text-decoration: none;
   padding-left: 0;
   padding-right: 0;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .logo-studio-footer {
@@ -68,16 +71,31 @@
 .post {
   margin-left: 0;
   margin-right: 30px;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   &:not(:last-child) {
     margin-bottom: 9px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1299px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 .footer-contakts__item {
   padding-left: 0px;
   margin: 0px;
 }
-
+.post + .footer-social {
+  @media screen and(min-width:768) {
+    justify-content: space-between;
+  }
+}
 .footer-social {
   width: 206px;
   display: block;
@@ -97,7 +115,6 @@
 }
 .footer-social__list {
   display: flex;
-  justify-content: space-between;
 }
 .footer-social__link {
   width: 44px;
@@ -140,6 +157,7 @@
 }
 .user-subscribtion input {
   width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;

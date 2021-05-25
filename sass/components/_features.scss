@@ -6,19 +6,30 @@
   padding-top: 94px;
   &__list {
     @media screen and (min-width: 760px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: calc(-1 * 15px);
       flex-basis: calc((100% - 30px * 2) / 2);
     }
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 30px * 4) / 4);
       display: flex;
     }
+  }
 
-    &__item {
-      justify-content: center;
+  &__item {
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+      flex-basis: calc((100% - 30px * 4) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 15px;
+      flex-basis: calc((100% - 30px * 4) / 2);
+    }
 
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 20px;
     }
   }
 }
