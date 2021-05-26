@@ -13,7 +13,6 @@
 }
 
 .team__item {
-  flex-basis: 100%;
   justify-content: center;
   @media screen and (min-width: 760px) {
     flex-basis: calc((100% - 30px * 2) / 2);

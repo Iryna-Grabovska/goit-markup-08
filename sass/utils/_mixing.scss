@@ -27,7 +27,6 @@ h3 {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid red;
 }
 .page {
   background-color: $text-white;
