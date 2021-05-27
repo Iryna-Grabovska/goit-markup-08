@@ -36,9 +36,11 @@
 .mobile-auth {
   margin-top: 100px;
   margin-bottom: 64px;
+  &__item {
+    margin-bottom: 10px;
+  }
 
   &__tel {
-    margin-bottom: 32px;
     font-style: Medium;
     font-size: 34px;
     line-height: 1.18;
@@ -89,11 +91,13 @@
   margin-left: 10px;
 }
 .mobile-menu__btn {
-  z-index: 3;
+  z-index: 2;
   width: 40px;
   height: 40px;
+  top: 10;
+  right: 16;
   background-color: transparent;
-  border-color: none;
+  border: none;
   cursor: pointer;
   @media screen and(min-width: 768px) {
     display: none;
@@ -107,7 +111,7 @@
   display: none;
 }
 .mobile-menu__icon-close {
-  display: block;
+  display: none;
   .is-open & {
     display: block;
   }
