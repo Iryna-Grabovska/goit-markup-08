@@ -18,13 +18,11 @@
   justify-content: center;
   @media screen and (min-width: 760px) {
     flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 30px * 4) / 4);
     display: flex;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }
 
@@ -43,7 +41,7 @@
 
 .team__social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .team-social__link {

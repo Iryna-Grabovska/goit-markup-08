@@ -105,7 +105,6 @@ h3 {
   font-size: 26px;
   line-height: 1.2;
   color: #2196f3;
-  display: flex;
 }
 
 .logo-studio {
@@ -260,7 +259,7 @@ h3 {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/herro.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herro.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -341,7 +340,7 @@ h3 {
 @media screen and (min-width: 1200px) {
   .features__item {
     margin: 15px;
-    flex-basis: calc((100% - 30px * 4) / 2);
+    flex-basis: calc((100% - 30px * 4) / 4);
   }
 }
 
@@ -464,6 +463,7 @@ h3 {
 @media screen and (min-width: 760px) {
   .team__item {
     flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
   }
 }
 
@@ -471,9 +471,6 @@ h3 {
   .team__item {
     flex-basis: calc((100% - 30px * 4) / 4);
     display: flex;
-  }
-  .team__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -491,7 +488,7 @@ h3 {
 
 .team__social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .team-social__link {
@@ -569,23 +566,19 @@ h3 {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .footer > .container {
-    text-align: center;
-    justify-content: center;
-  }
+.footer-container {
+  justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer > .container {
+@media screen and (min-width: 769px) {
+  .footer-container {
     display: flex;
     align-items: baseline;
   }
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -658,14 +651,16 @@ h3 {
   margin-bottom: 9px;
 }
 
-.post {
-  margin-bottom: 60px;
-  margin-left: 0;
-  width: 100%;
-  max-width: 270px;
+@media screen and (max-width: 768px) {
+  .post {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .post {
     width: 50%;
   }
@@ -677,9 +672,8 @@ h3 {
 }
 
 .footer-social {
+  text-align: center;
   margin-bottom: 60px;
-  width: 206px;
-  display: block;
 }
 
 .footer-social__title {
@@ -699,6 +693,7 @@ h3 {
 }
 
 .footer-social__list {
+  justify-content: center;
   display: flex;
 }
 
@@ -721,6 +716,7 @@ h3 {
 }
 
 .footer-subscribtion {
+  text-align: center;
   display: block;
 }
 
@@ -732,14 +728,7 @@ h3 {
 
 .footer-btn {
   justify-content: center;
-  display: flex;
   align-items: center;
-}
-
-@media (min-width: 1119.98px) {
-  .user-subscribtion {
-    display: flex;
-  }
 }
 
 .user-subscribtion input {
@@ -836,6 +825,12 @@ h3 {
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin: 15px;
+  }
+}
+
 .portfolio__item {
   background-color: #ffffff;
 }
@@ -847,6 +842,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .portfolio__item {
     flex-basis: calc((100% - 15px * 4) / 2);
+    margin: 15px;
   }
 }
 
@@ -1097,7 +1093,7 @@ h3 {
 }
 
 .checkbox:checked + .checkbox-label::before {
-  background-image: url(../imeges/cheaked.svg);
+  background-image: url(../images/cheaked.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
