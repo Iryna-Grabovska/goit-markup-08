@@ -1,5 +1,5 @@
 .footer > .container {
-  @media screen and(max-width:768px) {
+  @media screen and(min-width:768px) {
     text-align: center;
     justify-content: center;
   }
@@ -9,7 +9,7 @@
   }
 }
 .footer-container {
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:1119px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,6 +27,7 @@
 }
 
 .logo-studio-footer {
+  margin-bottom: 20px;
   color: $text-white;
   line-height: 1.2;
   /* or 171% */
@@ -78,13 +79,14 @@
 }
 
 .post {
+  margin-bottom: 60px;
   margin-left: 0;
-  margin-right: 30px;
+  //margin-right: 30px;
   width: 100%;
   max-width: 270px;
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
+  //&:not(:last-child) {
+  //  margin-bottom: 9px;
+  //}
   @media screen and(max-width:768px) {
     width: 50%;
   }
@@ -95,21 +97,27 @@
 }
 
 .footer-social {
+  margin-bottom: 60px;
   width: 206px;
   display: block;
-  padding-right: 93px;
+  //padding-right: 93px;
 }
-.footer-social__title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.footer-social {
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  color: $text-white;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 0;
+    color: $text-white;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
 }
 .footer-social__list {
   display: flex;
