@@ -170,7 +170,25 @@
                 <ul class="team__list">
                     <li class="team__item">
                         <article class="team__card">
+                            <picture>
+                                
+                                <source srcset="
+                                                      ./imeges/mobil/igor1.jpg  1x,
+                                                      ./images/team/team-02-450@2x.jpg 2x
+                                                    " media="(max-width: 767px)" />
+                                
+                                <source srcset="
+                                                      ./images/team/team-02-270.jpg    1x,
+                                                      ./images/team/team-02-270@2x.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                                
+                                <source srcset="
+                                                      ./images/team/team-02-354.jpg    1x,
+                                                      ./images/team/team-02-354@2x.jpg 2x
+                                                    " media="(min-width: 768px)" />
                             <img src="./imeges/Igor.jpg" alt="Игорь Демьяненко" width="270">
+
+                            </picture>
                             <div class="team__content">
                                 <h3 class="team__name">Игорь Демьяненко</h3>
                                 <p class="desc">Product Designer</p>
@@ -380,7 +398,7 @@
         </section>
  </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="post">
                 <a class="logo" href="./index.html">Web<span class="logo-studio-footer">Studio</span></a>
                 <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>

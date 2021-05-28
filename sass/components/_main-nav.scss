@@ -64,13 +64,14 @@
     display: inline-flex;
     display: block;
     margin-left: auto;
-    text-align: center;
   }
   @media screen and(min-width:1200px) {
     display: flex;
   }
   &__item:not(:last-child) {
     margin-right: 50px;
+  }
+  &__item {
   }
 }
 .auth__link {
@@ -93,5 +94,5 @@
   }
 }
 .auht__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
