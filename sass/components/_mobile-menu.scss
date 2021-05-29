@@ -30,6 +30,11 @@
     }
   }
 }
+.mobile-menu__link {
+  &__active {
+    color: $btn-cl;
+  }
+}
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }

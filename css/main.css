@@ -216,7 +216,7 @@ h3 {
   .auth {
     display: inline-flex;
     display: block;
-    margin-left: auto;
+    margin-left: 84px;
   }
 }
 
@@ -651,7 +651,7 @@ h3 {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .post {
     text-align: center;
     margin-bottom: 60px;
@@ -660,9 +660,19 @@ h3 {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .post {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .post {
+    margin-right: 70px;
+    max-width: 270px;
+  }
+  .post:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 
@@ -671,9 +681,18 @@ h3 {
   margin: 0px;
 }
 
-.footer-social {
-  text-align: center;
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-social {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    display: block;
+    margin-right: 73px;
+  }
 }
 
 .footer-social__title {
@@ -683,7 +702,6 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  display: inline-block;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -715,9 +733,11 @@ h3 {
   background-color: #2196f3;
 }
 
-.footer-subscribtion {
-  text-align: center;
-  display: block;
+@media screen and (max-width: 1200px) {
+  .footer-subscribtion {
+    text-align: center;
+    display: block;
+  }
 }
 
 @media (min-width: 1119.98px) {
@@ -726,9 +746,29 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social__form {
+    display: flex;
+  }
+}
+
 .footer-btn {
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .footer-btn {
+    display: flex;
+  }
+}
+
+@media (min-width: 1119.98px) {
+  .user-subscribtion {
+    flex-basis: 570px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .user-subscribtion input {
@@ -1137,6 +1177,10 @@ h3 {
 }
 
 .mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
+}
+
+.mobile-menu__link__active {
   color: #2196f3;
 }
 
