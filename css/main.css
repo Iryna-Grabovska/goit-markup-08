@@ -583,6 +583,13 @@ h3 {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    justify-content: center;
   }
 }
 
@@ -757,6 +764,12 @@ h3 {
 .footer-btn {
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1119px) {
+  .footer-btn {
+    margin-top: 22px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1160,6 +1173,7 @@ h3 {
 
 .mobile-menu {
   display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 100%;

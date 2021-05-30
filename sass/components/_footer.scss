@@ -9,6 +9,10 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
   }
 }
 
@@ -169,6 +173,9 @@
 }
 
 .footer-btn {
+  @media screen and(max-width:1119px) {
+    margin-top: 22px;
+  }
   justify-content: center;
 
   align-items: center;
