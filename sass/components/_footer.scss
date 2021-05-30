@@ -1,14 +1,14 @@
 .footer-container {
-  justify-content: center;
-  @media screen and(min-width:769px) {
+  @media screen and(max-width:767px) {
+    justify-content: center;
+  }
+  @media screen and(min-width:768px) {
     display: flex;
     align-items: baseline;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
-
-    justify-content: center;
   }
 }
 
@@ -132,6 +132,7 @@
   justify-content: center;
   display: flex;
 }
+
 .footer-social__link {
   width: 44px;
   height: 44px;
