@@ -212,22 +212,30 @@ h3 {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .auth {
     display: inline-flex;
     display: block;
-    margin-left: 84px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .auth {
     display: flex;
+    align-items: center;
   }
 }
 
-.auth__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 1119px) {
+  .auth__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth__item:not(:last-child) .auht__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .auth__link {
@@ -333,7 +341,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .features__item {
     margin: 15px;
-    flex-basis: calc((100% - 30px * 4) / 2);
+    flex-basis: calc((100% - 30px * 2) / 2);
   }
 }
 
@@ -573,10 +581,11 @@ h3 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -669,9 +678,10 @@ h3 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1119px) {
   .post {
     width: 50%;
+    text-align: center;
   }
 }
 
@@ -778,7 +788,7 @@ h3 {
   }
 }
 
-@media (min-width: 1119.98px) {
+@media (min-width: 1200px) {
   .user-subscribtion {
     flex-basis: 570px;
     display: flex;

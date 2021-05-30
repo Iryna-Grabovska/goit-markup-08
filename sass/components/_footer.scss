@@ -2,9 +2,10 @@
   @media screen and(max-width:767px) {
     justify-content: center;
   }
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:1200px) {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -86,8 +87,9 @@
     margin-left: 0;
     width: 100%;
   }
-  @media screen and(min-width:768px) {
+  @media screen and(max-width:1119px) {
     width: 50%;
+    text-align: center;
   }
   @media screen and(min-width:1200px) {
     margin-right: 70px;
@@ -184,7 +186,7 @@
   }
 }
 .user-subscribtion {
-  @media (min-width: 1119.98px) {
+  @media (min-width: 1200px) {
     flex-basis: 570px;
     display: flex;
     justify-content: center;
