@@ -233,7 +233,7 @@ h3 {
 }
 
 @media screen and (min-width: 1200px) {
-  .auth__item:not(:last-child) .auht__item:not(:last-child) {
+  .auht__item:not(:last-child) {
     margin-right: 50px;
   }
 }
@@ -793,6 +793,7 @@ h3 {
     flex-basis: 570px;
     display: flex;
     justify-content: center;
+    width: 358px;
   }
 }
 

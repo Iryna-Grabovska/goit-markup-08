@@ -74,11 +74,11 @@
   @media screen and(max-width:1119px) {
     margin-bottom: 10px;
   }
+}
 
-  .auht__item:not(:last-child) {
-    @media screen and(min-width:1200px) {
-      margin-right: 50px;
-    }
+.auht__item:not(:last-child) {
+  @media screen and(min-width:1200px) {
+    margin-right: 50px;
   }
 }
 
