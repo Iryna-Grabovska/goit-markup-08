@@ -1,4 +1,8 @@
 .herro {
+  @media screen and(max-width:1119px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -17,6 +21,10 @@
   padding-bottom: 200px;
 }
 .herro-title {
+  @media screen and(max-width:1119px) {
+    font-size: 26px;
+  }
+
   font-family: $maim-font;
   margin-top: 0;
   font-weight: 900;
