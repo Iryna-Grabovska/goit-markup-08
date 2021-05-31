@@ -9,11 +9,10 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -87,9 +86,12 @@
     margin-left: 0;
     width: 100%;
   }
-  @media screen and(min-width:768px) {
-    width: 50%;
+  @media screen and(max-width:1119px) {
     text-align: center;
+  }
+
+  @media screen and(min-width:1119px) {
+    width: 50%;
   }
   @media screen and(min-width:1200px) {
     margin-right: 70px;
